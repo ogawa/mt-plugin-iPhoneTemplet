@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="<MTPublishCharset />"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja" lang="ja">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=<$MTPublishCharset$>" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<title><$MTBlogName$></title>
+<link rel="stylesheet" href="<$MTStaticWebPath$>plugins/iPhoneTemplet/iui/iui/iui.css" type="text/css" />
+<script type="application/x-javascript" src="<$MTStaticWebPath$>plugins/iPhoneTemplet/iui/iui/iui.js"></script>
+<meta name="viewport" content="width=320; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;" />
+<meta name="robots" content="noindex" />
+</head>
+
+<body>
+
+<div class="toolbar">
+<h1 id="pageTitle"><$MTBlogName$></h1>
+<a id="backButton" class="button" href="#"></a>
+</div>
+
+<!-- ▼トップページここから▼ -->
+<ul id="home" selected="true">
+	<!-- ▼最新のブログ記事20件ここから▼ -->
+		<li class="group">最新のブログ記事20件</li>
+	<MTEntries lastn="20">
+		<li><a href="<$MTBlogArchiveURL$>i/<MTParentCategories glue="/"><$MTCategoryBasename$></MTParentCategories>/<$MTEntryBasename$>.html" target="_self"><$MTEntryTitle$>［<$MTEntryDate$>］</a></li>
+	</MTEntries>
+<!-- ▲最新のブログ記事20件ここまで▲ -->
+		<li class="group">過去記事アーカイブ</li>
+		<li><a href="#monthlyArchives">過去6ヶ月の記事を見る</a></li>
+</ul>
+<!-- ▲トップページここまで▲ -->
+
+<!-- ▼月別アーカイブリストここから▼ -->
+<ul id="monthlyArchives">
+	<MTArchiveList archive_type="Monthly" lastn="6">
+	<li><a href="#m<$MTArchiveDate format="%j"$>"><$MTArchiveTitle$></a></li>
+	</MTArchiveList>
+</ul>
+<!-- ▲月別アーカイブリストここまで▲ -->
+
+<!-- ▼月別アーカイブ個別記事ここから▼ -->
+	<MTArchiveList archive_type="Monthly" lastn="6">
+	<ul id="m<$MTArchiveDate format="%j"$>">
+		<MTEntries lastn="9999">
+				<li><a href="<$MTBlogArchiveURL$>i/<MTParentCategories glue="/"><$MTCategoryBasename$></MTParentCategories>/<$MTEntryBasename$>.html" target="_self"><$MTEntryTitle$>［<$MTEntryDate$>］</a></li>
+		</MTEntries>
+	</ul>
+	</MTArchiveList>
+<!-- ▲月別アーカイブ個別記事ここまで▲ -->
+
+</body>
+</html>

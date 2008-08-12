@@ -1,0 +1,140 @@
+@charset "utf-8";
+
+/* ------------------------------------------
+
+Style Name: style.css
+Since: 2008-07-15
+Modified: 2008-08-05
+Version: 1.01
+Auther: Akiko Kurono(crema)
+
+------------------------------------------*/
+
+/* ------------------------------------------
+
+browser style clear
+
+------------------------------------------*/
+
+* {
+	margin: 0;
+	padding: 0;
+	background: transparent;
+}
+
+ul,li,dl,dt,dd{
+	list-style:none;
+}
+img{
+	vertical-align: top;
+}
+a img{
+	border: none;
+}
+a{
+	text-decoration: underline;
+}
+a:link{
+	color: #0000ff;
+}
+a:visited{
+	color: #9900cc;
+}
+a:hover{
+	color: #0000ff;
+	text-decoration: none;
+}
+a:active{
+	color: #0000ff;
+}
+
+body {
+	background-color: #ffffff;
+	font-family:ArialMT, "Hiragino Kaku Gothic ProN", "ƒqƒ‰ƒMƒmŠpƒS ProN W3";
+	color: #000000;
+	font-size: 20px;
+	font-style: normal;
+	font-weight: normal;
+	line-height: 1.5;
+	-webkit-text-size-adjust:none;
+}
+
+h1,h2,h3,h4,h5,h6 {
+	font-size: 100%;
+}
+
+p {
+	margin: 0 0 1em 0;
+}
+
+select option {
+	padding: 0 5px;
+}
+
+/* ------------------------------------------
+
+content
+
+------------------------------------------*/
+
+div#content {
+	padding: 10px;
+}
+
+p#logo {
+	background: #6d84a2 url(../img/header_bg.png) repeat-x left top;
+	padding: 10px;
+	text-align: center;
+}
+
+p#logo a {
+	font-weight: bold;
+	font-family: Helvetica, "Hiragino Kaku Gothic ProN", "ƒqƒ‰ƒMƒmŠpƒS ProN W3";
+	color: #ffffff;
+	font-size: 30px;
+	text-decoration: none;
+	text-shadow: 0px -1px 0 rgba(0, 0, 0, 0.5);
+}
+
+h1 {
+	padding: 10px 0;
+	font-size: 24px;
+}
+
+p#topicpath {
+	font-style: normal;
+	font-size: 13px;
+	border-bottom: 1px solid #cccccc;
+	padding: 0 0 1em 0;
+	margin: 0 0 2em 0;
+}
+
+blockquote {
+	color: #333333;
+	padding: 20px;
+	margin: 0 0 1em 0;
+	background-color: #F5F5F5;
+	}
+
+p.previousEntry {
+	float:left;
+	width: 45%;
+	padding: 0.5em 0;
+
+}
+
+p.nextEntry {
+	float:right;
+	width: 45%;
+	text-align: right;
+	padding: 0.5em 0;
+
+}
+
+p.totop {
+	clear: both;
+	padding: 0.5em 0;
+}
+
+
+

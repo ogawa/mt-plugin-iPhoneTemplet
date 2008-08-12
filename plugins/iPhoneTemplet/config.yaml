@@ -1,0 +1,22 @@
+---
+description: 'iPhone Templet.'
+id: iphone_templet
+key: iphone_templet
+name: 'iPhone Templet'
+templets:
+  iphone_templet:
+    base_path: templates
+    label: 'iPhone Templet'
+    templates:
+      index:
+        iphone_index:
+          label: メインページ (iPhone用)
+          outfile: i/index.html
+          rebuild_me: 1
+      individual:
+        iphone_entry:
+          label: ブログ記事 (iPhone用)
+          mappings:
+            individual:
+              archive_type: Individual
+              file_template: 'i/%c/%f'
