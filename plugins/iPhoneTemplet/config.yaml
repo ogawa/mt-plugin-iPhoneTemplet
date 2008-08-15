@@ -1,22 +1,23 @@
----
-description: 'iPhone Templet.'
+name: iPhone Templet
 id: iphone_templet
 key: iphone_templet
-name: 'iPhone Templet'
+description: <__trans phrase="iPhone Templet is a templet for creating iPhone-specific pages.">
+version: 0.01
+l10n_class: iPhoneTemplet::L10N
 templets:
   iphone_templet:
     base_path: templates
-    label: 'iPhone Templet'
+    label: iPhone Templet
     templates:
       index:
         iphone_index:
-          label: メインページ (iPhone用)
+          label: Main Index (for iPhone)
           outfile: i/index.html
           rebuild_me: 1
       individual:
         iphone_entry:
-          label: ブログ記事 (iPhone用)
+          label: Entry (for iPhone)
           mappings:
             individual:
               archive_type: Individual
-              file_template: 'i/%c/%f'
+              file_template: i/%c/%f
