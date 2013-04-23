@@ -6,7 +6,7 @@ allows you to use *pluggable* template sets.
 Using this iPhone templet with Templets, you'll be able to set up
 iPhone-friendly pages very easily.
 
-[1] http://code.as-is.net/public/wiki/Templets
+[1] https://github.com/ogawa/mt-plugin-Templets
 
 -----
 Copyright (c) 2008 Hirotaka Ogawa
